@@ -11,17 +11,15 @@ export const Index: React.FC = () => {
       </div>
       <div className="background-container">
         <div className="background-container__map">
-          <div className="container-card">
             <div className="container-card-left">
               {/* <Maps></Maps> */}
-              <Card color="green" heading="11930" subcontent="abc"></Card>
+              <Card color="green" heading="11930" subcontent="abc" border={false}></Card>
             </div>
             <div className="container-card-right">
               <Sidebar></Sidebar>
             </div>
-          </div>
         </div>
-        <div className="background-container__bar"></div>
+        {/* <div className="background-container__bar"></div> */}
       </div>
       <div className="container"></div>
     </div>

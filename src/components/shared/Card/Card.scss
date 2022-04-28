@@ -1,15 +1,19 @@
 @import "../../../assets/styles/variables";
 .card {
-  width: 50%;
+  width: 80%;
   height: 4.6rem;
   background-color: white;
   padding:0 0.1rem;
   justify-content: space-around;
+ 
   &__body {
     margin: auto;
-    width: 60%;
+    width: 80%;
     padding:0.5rem 0;
-    justify-content: space-around;
+    height: 70%;
+    &.border{
+      border-bottom: 2px solid $gray;
+    }
     &__icon {
       width: 30%;
       float: left;
@@ -43,7 +47,7 @@
     }
     &__content {
       width: 60%;
-      float: right;
+      float: left;
       font-size: $FontHeadingSize;
       font-weight: $FontWeightBold;
    

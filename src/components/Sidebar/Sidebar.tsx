@@ -7,8 +7,11 @@ export const Sidebar: React.FC = () => {
   return (
     <div>
       <div className="conatiner-sidebar">
-      <Card color="green" heading="11930" subcontent="abc"></Card>
-      <Card color="pink" heading="11930" subcontent="abc"></Card>  
+      <Card color="green" heading="11930" subcontent="abc" border={true}></Card>
+      <Card color="pink" heading="11930" subcontent="abc" border={true}></Card>  
+      <Card color="green" heading="11930" subcontent="abc" border={true}></Card>
+      <Card color="pink" heading="11930" subcontent="abc" border={true}></Card>  
+      <Card color="green" heading="11930" subcontent="abc" border={true}></Card>
       </div>
     </div>
   );
