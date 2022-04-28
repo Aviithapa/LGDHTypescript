@@ -1,0 +1,262 @@
+@import 'assets/styles/variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-size: 14px !important;
+}
+
+.pos-inherit {
+  position: inherit !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.font-default {
+  font-size: 14px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.modalFooter {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container-main {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Page Style
+.page {
+  padding: 3.2rem 0;
+
+  &__header {
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+
+    &__title {
+      margin-right: 1rem;
+    }
+  }
+}
+
+// Card Style
+.c-card {
+  background-color: white;
+  padding: 1rem;
+
+  &--border {
+    border: 1px solid $Gray4;
+    background-color: transparent;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__dropdown-menu {
+    font-size: 14px;
+  }
+
+  &__more {
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    span {
+      height: 14px;
+    }
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+// Flex CSS
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-end {
+  justify-content: flex-end;
+}
+
+.button-border {
+  border: 1px solid $Gray6 !important;
+  background-color: transparent !important;
+
+  &:hover {
+    background-color: $Gray3 !important;
+  }
+}
+
+// Dropdown
+.capa-dropdown {
+  position: relative;
+
+  &__menu {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0px $Gray4;
+    display: none;
+    right: 0;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 10;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__item {
+    align-items: center;
+    border-radius: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex: 0 0 auto;
+    background-color: white;
+    color: rgb(23, 43, 77);
+    text-decoration: none;
+    padding: 8px 12px 7px;
+    width: auto;
+    font-size: 14px;
+    margin: 3px 0;
+
+    &:hover {
+      background-color: $Gray1;
+    }
+  }
+}
+
+.ct {
+  &-block {
+    margin-top: 3.6rem;
+  }
+
+  &--sidebar {
+    position: fixed;
+    width: 100%;
+    max-width: 260px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1.4rem;
+    margin-top: 3.6rem;
+  }
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      padding: 8px 0;
+    }
+
+    &-btn {
+      width: 100% !important;
+
+      span:last-child {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  &--content {
+    margin-left: 260px;
+    padding: 1.4rem;
+  }
+
+  &-breadcrumb {
+    margin-bottom: 1.6rem;
+
+    &__item {
+      padding-bottom: 0.4rem;
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: $Gray10;
+
+        &:hover {
+          color: $Gray8;
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        margin: 0 0.4rem;
+      }
+    }
+
+    &__title {
+    }
+  }
+
+  &__info {
+    margin-top: 1.4rem;
+
+    &__title {
+      margin-bottom: 0.4rem;
+    }
+
+    ul {
+      padding-left: 1.6rem;
+    }
+
+    ul li {
+      font-weight: 600;
+      color: $Gray9;
+      padding-top: 0.6rem;
+      font-size: 14px;
+    }
+  }
+}
+
+.atlaskit-portal h4 {
+  margin-top: 0 !important;
+  font-size: 18px;
+}

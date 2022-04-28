@@ -1,0 +1,101 @@
+.container-navbar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 3.6rem;
+  box-shadow: white;
+  z-index: 100;
+  justify-content: space-around;
+  padding: 0 1.2rem;
+
+  &__logo {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__applogo {
+    height: 35px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-right: 20px;
+  }
+
+  &__item {
+    padding-left: 1rem;
+    a {
+      text-decoration: none;
+    }
+    .search {
+      padding: 0.3rem;
+      min-width: 250px;
+      &::-moz-focus-outer{
+          border: none;
+      }
+    }
+    .single-select {
+      width: 64px;
+    }
+  }
+
+  &__SignupButton {
+    margin-left: 10px;
+    padding: 0.4rem;
+    background-color: #378cfb;
+    color: white;
+    border: none;
+  }
+}
+
+.main-menu {
+  margin-left: 2rem;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-left: 0.8rem;
+    a {
+      text-decoration: none;
+      color: gray;
+      font-weight: 600;
+      padding: 1rem;
+
+      button {
+        padding: 0 4px;
+        position: relative;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      &.active button span {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -22px;
+          left: 0;
+          width: 100%;
+          background-color: red;
+          height: 2px;
+          z-index: 99999;
+        }
+      }
+    }
+  }
+}

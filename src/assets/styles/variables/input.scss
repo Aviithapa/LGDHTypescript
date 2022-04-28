@@ -1,0 +1,23 @@
+.input {
+  &-small input {
+    padding: 2px 5px !important;
+    height: 24px !important;
+    font-size: 12px;
+  }
+
+  &-border--none {
+    border: 0 !important;
+  }
+
+  &-text--center {
+    input {
+      text-align: center;
+    }
+  }
+
+  &-area {
+    textarea {
+      font-size: 12px;
+    }
+  }
+}

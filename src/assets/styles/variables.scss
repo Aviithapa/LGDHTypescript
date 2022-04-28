@@ -1,0 +1,19 @@
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'variables/mediaqueries';
+@import 'variables/shadows';
+@import 'variables/sizes';
+@import 'variables/textstyles';
+@import 'variables/timing';
+@import 'variables/tools';
+@import 'variables/z-indexes';
+@import 'variables/input';
+
+// Transition
+@mixin transition($x) {
+  transition: $x;
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+}

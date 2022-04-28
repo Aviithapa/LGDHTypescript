@@ -1,0 +1,57 @@
+@import "../../../assets/styles/variables";
+.card {
+  width: 50%;
+  height: 4.6rem;
+  background-color: white;
+  padding:0 0.1rem;
+  justify-content: space-around;
+  &__body {
+    margin: auto;
+    width: 60%;
+    padding:0.5rem 0;
+    justify-content: space-around;
+    &__icon {
+      width: 30%;
+      float: left;
+      &__image {
+        height: 3.6rem;
+        width: 3.6rem;
+        border-radius: 50%;
+        display: inline-block;
+        &.gray{
+            background-color: $gray;
+          }
+          &.pink{
+              background-color: $pink;
+          }
+          &.green{
+              background-color: $green;
+          }
+          &.spring{
+            background-color: $spring;
+         }
+         &.prim{
+             background-color: $prim;
+         }
+         &.wood{
+             background-color: $wood;
+         }
+
+      }
+
+      
+    }
+    &__content {
+      width: 60%;
+      float: right;
+      font-size: $FontHeadingSize;
+      font-weight: $FontWeightBold;
+   
+   &__subcontent{
+    font-size: $FontContentSize;
+    font-weight: $FontWeightLight;
+    padding-top: 0px;
+   } 
+}
+  }
+}

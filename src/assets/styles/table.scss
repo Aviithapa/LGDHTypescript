@@ -1,0 +1,32 @@
+.c-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+
+  &--bordered {
+    border: 1px solid #dee2e6;
+
+    td,
+    th {
+      border: 1px solid #dee2e6;
+    }
+
+    thead td,
+    thead th {
+      border-bottom-width: 2px;
+    }
+  }
+
+  td,
+  th {
+    padding: 0.3rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  }
+}
